@@ -89,6 +89,11 @@ public class MainActivity extends AppCompatActivity implements
         // TODO (1) Get the test data here from the extras bundle that came with this intent.
         // To confirm that the data was passed in, make sure to show the data in a log statement.
 
+        Bundle b= getIntent().getExtras();
+        if(b != null){
+            Log.v("Extra data is : ", b.getString("test"));
+        }
+
     }
 
     @Override
